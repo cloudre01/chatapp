@@ -1,6 +1,7 @@
+const serverLink = 'https://chatapp-sexh.onrender.com'
 const username = prompt('What is your username?')
 // const socket = io('http://localhost:9000'); // the / namespace/endpoint
-const socket = io('https://chatapp-sexh.onrender.com', {
+const socket = io(serverLink, {
   query: {
     username,
   },
